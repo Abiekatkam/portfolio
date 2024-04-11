@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className="w-full h-fit flex flex-col items-start gap-2">
+    <div className="w-full h-fit flex flex-col items-start gap-2 transition-all ease-in duration-300">
       <div className="w-full flex flex-row items-center justify-start gap-4">
         <h1 className="text-5xl capitalize font-semibold w-fit">About Me</h1>
         <span className="w-[60%] h-[0.5px] dark:bg-slate-50 bg-stone-950"></span>

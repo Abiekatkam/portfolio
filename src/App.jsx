@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { AboutMe, Experience, ProfileSidebar } from "./components";
+import {
+  AboutMe,
+  Contacts,
+  Experience,
+  ProfileSidebar,
+  Project,
+} from "./components";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -36,11 +42,13 @@ const App = () => {
 
         {/* main content */}
         <div
-          className="w-[50%] h-fit min-h-[580px] max-h-[590px] my-auto overflow-y-scroll flex flex-col items-start justify-start gap-12 py-8 px-4"
+          className="w-[50%] h-fit max-h-[590px] my-auto overflow-y-scroll flex flex-col items-start gap-24 py-8 px-4"
           id="contentDisplay"
         >
           <AboutMe />
           <Experience />
+          <Project />
+          <Contacts />
         </div>
 
         {/* sidebar */}
@@ -72,6 +80,16 @@ const App = () => {
               <span>contact</span>
             </div>
           </div>
+
+          <button
+            type="button"
+            className="w-fit h-fit mt-auto mb-6 px-3 p-2 font-semibold flex items-center flex-row justify-center gap-2 border dark:border-slate-50 active:scale-110 transition-all ease-in-out duration-300 capitalize"
+          >
+            Download resume
+            <span className="animate-bounce">
+              <i className="fa-solid fa-download"></i>
+            </span>
+          </button>
         </div>
       </div>
     </main>
