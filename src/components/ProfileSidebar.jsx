@@ -1,26 +1,29 @@
 import React from "react";
+import ProfileImage from "../assets/abhishek_katkam.jpg";
 
 const ProfileSidebar = () => {
   return (
     <>
-      <div className="absolute z-10 left-7 w-[200px] h-[200px] object-contain overflow-hidden ring-4 ring-slate-600 shadow-2xl dark:ring-slate-100 rounded-md transition-all duration-500 ease-in">
+      <div className="lg:w-[200px] lg:h-[200px] w-[150px] h-[150px] object-contain overflow-hidden ring-4 ring-slate-600 shadow-2xl dark:ring-slate-100 rounded-md transition-all duration-500 ease-in">
         <img
-          src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
-          alt="profile image"
-          className="w-full h-full object-center"
+          // src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHByb2ZpbGV8ZW58MHx8MHx8fDA%3D"
+          src={ProfileImage}
+          alt="Abhishek Kaatkam profile"
+          className="w-full h-full object-center grayscale"
         />
       </div>
-      <div className="absolute top-44 pt-20 px-6 w-full h-fit transition-all duration-500 ease-in flex flex-col items-start gap-4">
+
+      <div className="w-fit h-fit transition-all duration-500 ease-in flex flex-col items-start gap-4">
         <div>
-          <p className="uppercase text-2xl text-slate-500 dark:text-slate-300 font-semibold transition-all duration-500 ease-in">
+          <p className="uppercase lg:text-2xl text-xl text-slate-500 dark:text-slate-300 font-semibold transition-all duration-500 ease-in">
             Hey, I'm
           </p>
-          <h1 className="text-6xl font-semibold leading-[3rem] text-stone-900 dark:text-slate-50 transition-all duration-500 ease-in">
+          <h1 className="lg:text-6xl text-5xl font-semibold leading-[3rem] text-stone-900 dark:text-slate-50 transition-all duration-500 ease-in">
             Abhishek Katkam
           </h1>
         </div>
 
-        <p className="text-md uppercase text-slate-500 dark:text-slate-300 font-semibold transition-all duration-500 ease-in">
+        <p className="lg:text-md text-xl uppercase text-slate-500 dark:text-slate-300 font-semibold transition-all duration-500 ease-in">
           frontend developer
         </p>
 
@@ -30,7 +33,7 @@ const ProfileSidebar = () => {
           </p>
           <div className="w-full h-fit flex flex-row items-center gap-4">
             <a
-              href="/"
+              href="https://twitter.com/AbhishekKatkam9"
               target="_blank"
               className="text-2xl cursor-pointer text-slate-600 dark:text-slate-300 hover:scale-125 transition-all ease-in duration-200"
             >
@@ -38,7 +41,7 @@ const ProfileSidebar = () => {
             </a>
 
             <a
-              href="/"
+              href="https://www.linkedin.com/in/abhishek-katkam-988744231/"
               target="_blank"
               className="text-2xl cursor-pointer text-slate-600 dark:text-slate-300 hover:scale-125 transition-all ease-in duration-200"
             >
@@ -46,7 +49,7 @@ const ProfileSidebar = () => {
             </a>
 
             <a
-              href="/"
+              href="https://github.com/Abiekatkam"
               target="_blank"
               className="text-2xl cursor-pointer text-slate-600 dark:text-slate-300 hover:scale-125 transition-all ease-in duration-200"
             >
@@ -54,7 +57,7 @@ const ProfileSidebar = () => {
             </a>
 
             <a
-              href="/"
+              href="https://www.instagram.com/_abie._/"
               target="_blank"
               className="text-2xl cursor-pointer text-slate-600 dark:text-slate-300 hover:scale-125 transition-all ease-in duration-200"
             >
