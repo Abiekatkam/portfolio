@@ -26,16 +26,30 @@ const ExperienceCard = ({ experience }) => {
           ))}
         </div>
 
-        <a
-          href={experience.companyLink}
-          target="_blank"
-          className="w-fit h-fit lg:mt-auto mt-4 text-sm capitalize dark:text-slate-300 text-slate-700 flex items-center justify-center gap-2 group transition-all ease-in-out duration-300"
-        >
-          <span className="group-hover:underline">visit linkedin profile</span>{" "}
-          <span className="group-hover:scale-110">
-            <i className="fa-solid fa-arrow-up-right-from-square"></i>
-          </span>
-        </a>
+        <div className="w-full lg:mt-auto mt-5 h-fit flex lg:flex-row flex-col lg:items-center justify-start lg:gap-9 gap-3">
+          <a
+            href={experience.companyUrl}
+            target="_blank"
+            className="w-fit h-fit text-sm capitalize dark:text-slate-300 text-slate-700 flex items-center justify-center gap-2 group transition-all ease-in-out duration-300"
+          >
+            <span className="group-hover:underline">visit company site</span>{" "}
+            <span className="group-hover:scale-110">
+              <i className="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </a>
+          <a
+            href={experience.companyLink}
+            target="_blank"
+            className="w-fit h-fit text-sm capitalize dark:text-slate-300 text-slate-700 flex items-center justify-center gap-2 group transition-all ease-in-out duration-300"
+          >
+            <span className="group-hover:underline">
+              visit linkedin profile
+            </span>{" "}
+            <span className="group-hover:scale-110">
+              <i className="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   );

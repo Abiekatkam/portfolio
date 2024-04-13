@@ -42,6 +42,7 @@ export const ExperienceData = [
       },
     ],
     companyLink: "https://www.linkedin.com/company/konnectinsights/mycompany/",
+    companyUrl: "https://konnectinsights.com/",
   },
 ];
 
