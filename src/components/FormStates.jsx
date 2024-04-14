@@ -96,6 +96,7 @@ const FormStates = () => {
           <input
             type="text"
             placeholder="First Name"
+            value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
             className="mt-1 block w-full px-3 py-2 bg-transparent dark:bg-transparent border border-slate-500 dark:border-slate-300 rounded-md text-md shadow-sm placeholder-slate-500 dark:placeholder-slate-400 placeholder:italic focus:outline-none focus:border-slate-900 dark:focus:border-slate-300 focus:ring-1 focus:ring-slate-700 dark:focus:ring-slate-400 transition-all ease-in-out duration-300"
           />
@@ -116,6 +117,7 @@ const FormStates = () => {
           <input
             type="text"
             placeholder="Last Name"
+            value={lastName}
             onChange={(e) => setLastName(e.target.value)}
             className="mt-1 block w-full px-3 py-2 bg-transparent dark:bg-transparent border border-slate-500 dark:border-slate-300 rounded-md text-md shadow-sm placeholder-slate-500 dark:placeholder-slate-400 placeholder:italic focus:outline-none focus:border-slate-900 dark:focus:border-slate-300 focus:ring-1 focus:ring-slate-700 dark:focus:ring-slate-400 transition-all ease-in-out duration-300"
           />
@@ -135,6 +137,7 @@ const FormStates = () => {
         </span>
         <input
           type="email"
+          value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@gmail.com"
           className="peer mt-1 block w-full px-3 py-2 bg-transparent dark:bg-transparent border border-slate-500 dark:border-slate-300 rounded-md text-md shadow-sm placeholder-slate-500 dark:placeholder-slate-400 placeholder:italic focus:outline-none focus:border-slate-900 dark:focus:border-slate-300 focus:ring-1 focus:ring-slate-700 dark:focus:ring-slate-400 invalid:border-pink-500 dark:invalid:border-fuchsia-500 invalid:text-pink-600 dark:invalid:text-fuchsia-500
@@ -155,6 +158,7 @@ const FormStates = () => {
         </span>
         <textarea
           rows={5}
+          value={message}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Enter your message here..."
           className="peer resize-none mt-1 block w-full px-3 py-2 bg-transparent dark:bg-transparent border border-slate-500 dark:border-slate-300 rounded-md text-md shadow-sm placeholder-slate-500 dark:placeholder-slate-400 placeholder:italic focus:outline-none focus:border-slate-900 dark:focus:border-slate-300 focus:ring-1 focus:ring-slate-700 dark:focus:ring-slate-400  transition-all ease-in-out duration-300"
