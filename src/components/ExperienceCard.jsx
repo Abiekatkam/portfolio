@@ -1,9 +1,20 @@
 import React from "react";
 import SkillTag from "./SkillTag";
+import { motion } from "framer-motion";
 
 const ExperienceCard = ({ experience }) => {
   return (
-    <div className="w-full h-full lg:min-h-[270px] p-4 rounded-lg shadow-xl bg-slate-200 dark:bg-stone-900 flex flex-row items-start gap-4">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        ease: "linear",
+        duration: 1.75,
+        delay: 0.5,
+        y: { duration: 1.75 },
+      }}
+      className="w-full h-full lg:min-h-[270px] p-4 rounded-lg shadow-xl bg-slate-200 dark:bg-stone-900 flex flex-row items-start gap-4"
+    >
       <div className="w-[20%] hidden lg:block">
         <p className="font-semibold text-md uppercase">{experience.timeline}</p>
       </div>
@@ -51,7 +62,7 @@ const ExperienceCard = ({ experience }) => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

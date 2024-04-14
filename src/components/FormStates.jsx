@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
 
 const FormStates = () => {
   const [firstName, setFirstName] = useState("");
@@ -96,7 +97,7 @@ const FormStates = () => {
             type="text"
             placeholder="First Name"
             onChange={(e) => setFirstName(e.target.value)}
-            className="mt-1 block w-full px-3 py-2 bg-white dark:bg-transparent border border-slate-500 dark:border-slate-300 rounded-md text-md shadow-sm placeholder-slate-500 dark:placeholder-slate-400 placeholder:italic focus:outline-none focus:border-slate-900 dark:focus:border-slate-300 focus:ring-1 focus:ring-slate-700 dark:focus:ring-slate-400 transition-all ease-in-out duration-300"
+            className="mt-1 block w-full px-3 py-2 bg-transparent dark:bg-transparent border border-slate-500 dark:border-slate-300 rounded-md text-md shadow-sm placeholder-slate-500 dark:placeholder-slate-400 placeholder:italic focus:outline-none focus:border-slate-900 dark:focus:border-slate-300 focus:ring-1 focus:ring-slate-700 dark:focus:ring-slate-400 transition-all ease-in-out duration-300"
           />
           <p
             className={`mt-2 ${
@@ -116,7 +117,7 @@ const FormStates = () => {
             type="text"
             placeholder="Last Name"
             onChange={(e) => setLastName(e.target.value)}
-            className="mt-1 block w-full px-3 py-2 bg-white dark:bg-transparent border border-slate-500 dark:border-slate-300 rounded-md text-md shadow-sm placeholder-slate-500 dark:placeholder-slate-400 placeholder:italic focus:outline-none focus:border-slate-900 dark:focus:border-slate-300 focus:ring-1 focus:ring-slate-700 dark:focus:ring-slate-400 transition-all ease-in-out duration-300"
+            className="mt-1 block w-full px-3 py-2 bg-transparent dark:bg-transparent border border-slate-500 dark:border-slate-300 rounded-md text-md shadow-sm placeholder-slate-500 dark:placeholder-slate-400 placeholder:italic focus:outline-none focus:border-slate-900 dark:focus:border-slate-300 focus:ring-1 focus:ring-slate-700 dark:focus:ring-slate-400 transition-all ease-in-out duration-300"
           />
           <p
             className={`mt-2 ${
@@ -136,7 +137,7 @@ const FormStates = () => {
           type="email"
           onChange={(e) => setEmail(e.target.value)}
           placeholder="you@gmail.com"
-          className="peer mt-1 block w-full px-3 py-2 bg-white dark:bg-transparent border border-slate-500 dark:border-slate-300 rounded-md text-md shadow-sm placeholder-slate-500 dark:placeholder-slate-400 placeholder:italic focus:outline-none focus:border-slate-900 dark:focus:border-slate-300 focus:ring-1 focus:ring-slate-700 dark:focus:ring-slate-400 invalid:border-pink-500 dark:invalid:border-fuchsia-500 invalid:text-pink-600 dark:invalid:text-fuchsia-500
+          className="peer mt-1 block w-full px-3 py-2 bg-transparent dark:bg-transparent border border-slate-500 dark:border-slate-300 rounded-md text-md shadow-sm placeholder-slate-500 dark:placeholder-slate-400 placeholder:italic focus:outline-none focus:border-slate-900 dark:focus:border-slate-300 focus:ring-1 focus:ring-slate-700 dark:focus:ring-slate-400 invalid:border-pink-500 dark:invalid:border-fuchsia-500 invalid:text-pink-600 dark:invalid:text-fuchsia-500
            focus:invalid:border-pink-500 focus:invalid:ring-pink-500 transition-all ease-in-out duration-300"
         />
         <p
@@ -156,7 +157,7 @@ const FormStates = () => {
           rows={5}
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Enter your message here..."
-          className="peer resize-none mt-1 block w-full px-3 py-2 bg-white dark:bg-transparent border border-slate-500 dark:border-slate-300 rounded-md text-md shadow-sm placeholder-slate-500 dark:placeholder-slate-400 placeholder:italic focus:outline-none focus:border-slate-900 dark:focus:border-slate-300 focus:ring-1 focus:ring-slate-700 dark:focus:ring-slate-400  transition-all ease-in-out duration-300"
+          className="peer resize-none mt-1 block w-full px-3 py-2 bg-transparent dark:bg-transparent border border-slate-500 dark:border-slate-300 rounded-md text-md shadow-sm placeholder-slate-500 dark:placeholder-slate-400 placeholder:italic focus:outline-none focus:border-slate-900 dark:focus:border-slate-300 focus:ring-1 focus:ring-slate-700 dark:focus:ring-slate-400  transition-all ease-in-out duration-300"
         />
         <p
           className={`mt-2 ${
@@ -167,9 +168,13 @@ const FormStates = () => {
         </p>
       </label>
 
-      <button className="w-fit px-4 p-2 text-lg font-semibold rounded-md hover:dark:bg-slate-100 hover:bg-stone-950 hover:text-slate-50 text-stone-950 border-stone-950 dark:hover:text-stone-900 dark:bg-transparent dark:text-slate-50 dark:border-slate-50 border transition-all ease-in duration-200 active:scale-110 ml-auto">
+      <motion.button
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.8 }}
+        className="w-fit px-4 p-2 text-lg font-semibold rounded-md hover:dark:bg-slate-100 hover:bg-stone-950 hover:text-slate-50 text-stone-950 border-stone-950 dark:hover:text-stone-900 dark:bg-transparent dark:text-slate-50 dark:border-slate-50 border ml-auto"
+      >
         Submit
-      </button>
+      </motion.button>
     </form>
   );
 };
