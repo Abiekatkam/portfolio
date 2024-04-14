@@ -23,5 +23,6 @@ Contact Form Integration: EmailJS will enable the integration of a contact form 
 
 Overall, a portfolio created with Vite, React, Tailwind CSS, EmailJS, and Framer Motion combines modern web development tools and techniques to create a visually stunning, interactive, and functional showcase of a user's work and skills.
 
+### [View portfolio live](https://portfolio-hxpmwalhk-abiekatkams-projects.vercel.app/)
 
 ![Main portfolio page](https://github.com/Abiekatkam/portfolio/assets/101975840/556fb947-fa7c-48a2-8e94-1c4d251ca9c5)
